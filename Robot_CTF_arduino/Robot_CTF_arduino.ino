@@ -39,6 +39,7 @@ void setup()
 int forward = 0;
 int turn = 0;
 int i = 0;
+int flashing = 0;
 void loop()
 {
 
@@ -110,27 +111,30 @@ void loop()
     int sensorValue1 = analogRead(A1);
     int sensorValue4 = analogRead(A4);
     
-        Serial.print(sensorValue1);
-        Serial.print(sensorValue4);
+//        Serial.print(sensorValue1);
+//        Serial.print(sensorValue4);
     if ((sensorValue1 > 500) || (sensorValue4 > 500)) {
 //      if (random(1,10) == 1)
-
+//        if (flashing == 0) {
+//        flashing = 1;
         digitalWrite(8, HIGH);
-        delay(300);
-        digitalWrite(8, LOW);
-        delay(100);
-        digitalWrite(8, HIGH);
-        delay(300);
-        digitalWrite(8, LOW);
-        delay(100);
-        digitalWrite(8, HIGH);
-        delay(300);
-        digitalWrite(8, LOW);
-        delay(100);
-        digitalWrite(8, HIGH);
-        delay(300);
-        digitalWrite(8, LOW);
-        delay(100);
+//        delay(300);
+//        digitalWrite(8, LOW);
+//        delay(100);
+//        digitalWrite(8, HIGH);
+//        delay(300);
+//        digitalWrite(8, LOW);
+//        delay(100);
+//        digitalWrite(8, HIGH);
+//        delay(300);
+//        digitalWrite(8, LOW);
+//        delay(100);
+//        digitalWrite(8, HIGH);
+//        delay(300);
+//        digitalWrite(8, LOW);
+//        delay(100);
+//        }
+//        flashing = 0;
     }                    
 }
 
